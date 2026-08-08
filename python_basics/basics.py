@@ -38,3 +38,5 @@ print(type(is_learning_python))
 # <class 'float'>
 # <class 'int'>
 # <class 'bool'>
+
+
