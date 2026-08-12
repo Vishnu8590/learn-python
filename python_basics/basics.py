@@ -166,6 +166,9 @@ print(a[0])
 # Output:
 # R
 
+#string slicing
+
+
 
 # =====================================
 # 5. User Input and Output
@@ -321,4 +324,158 @@ print("Fahrenheit:", fahrenheit)
 # Output:
 # Enter temperature in Celsius: 25
 # Fahrenheit: 77.0
+
+#23 Kilometers to Meters
+
+a= float(input())
+print("meters: ",a*1000)
+
+#input:
+#1.2
+
+
+#output:
+#1200
+
+
+
+# =====================================
+# 6. Relational Operators
+# =====================================
+
+#comparing Numbers
+#----------------------
+
+print(5>6)
+
+#output:
+#False
+print(1.2<3.2)
+
+#output:
+#True
+
+print(2 <= 2)
+#output:
+#True
+
+print(2.2 != 3.2)
+#Output:
+#True
+
+#Comparing String
+#--------------------
+
+print("ABC"=="ABC")
+#output
+#True
+
+print("abc" == "ABC") #case sensitive
+#ouput
+#False
+
+
+#? Check if first three characters of he two strings are same
+str1 = input()
+str2 = input()
+
+print(str1[:3] == str2[:3])
+
+#Input
+#Application
+#Apple
+
+#Output
+#True
+
+
+#? Checks if the fist letter and last letter of the word are not same
+
+word = input()
+word_len = len(word)
+first_letter = word[0]
+last_letter = word[word_len - 1]
+print(first_letter != last_letter)
+
+
+#Sample Input:
+#Python
+
+#Output:
+#True
+
+#Sample Input:
+#label
+
+#Output:
+#False
+
+#? True should be printed if the sum of the digits of the two digit number N is gerater than 7,otherwise False should be printed
+
+N = input()
+firstNo = int(N[0])
+secondNo=int(N[1])
+print((firstNo+secondNo)>7)
+
+#Sample Input:
+#45
+
+#Output:
+#True
+
+
+#? True should be printed if the second word is the last part of the first word,otherwise False should be printed
+
+first = input()
+second = input()
+
+first_len = len(first)
+second_len = len(second)
+
+start_index = first_len -second_len
+
+print(first[start_index:]==second)
+
+#Sample Input:
+#Blackhole
+#hole
+
+#Ouput:
+#True
+
+#? True should be printed if the word B starts at index I of the word A,otherwise False should be printed
+
+A = input()
+B = input()
+B_len = len(B)
+index = int(input())
+end_index=index+B_len
+
+print(A[index:end_index]==B)
+
+#Sample Input:
+#Repeat
+#pea
+#2
+
+#Output:
+#True
+
+#? True should be printed if the N characters of the string and the last N characters of the string are not the same,otherwise  false should be printed.
+
+string = input()
+N = int(input())
+length = len(string)
+first_part = string[:N]
+second_part = string[length-N:]
+
+print(first_part != second_part)
+
+#Sample Input:
+#bulb
+#1
+
+
+#Output:
+#False
 
