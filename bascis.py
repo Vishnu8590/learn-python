@@ -479,3 +479,70 @@ print(first_part != second_part)
 #Output:
 #False
 
+
+# =====================================
+# 7. Logical Operators
+# =====================================
+
+# and
+# or
+# not
+
+print((4<5)and(not(1 != 1)))
+
+#Output:
+#True
+
+
+#? True should be printed if the sum of A and B is not gerater than 100,otherwise False should be printed
+
+a=int(input())
+b=int(input())
+sum= a + b 
+greater=sum > 100
+print(not(greater))
+
+
+#Sample input:
+#30
+#20
+
+# Output:
+#True
+
+#Sample Input:
+#60
+#70
+
+#Output:
+#False
+
+
+
+#? True should be printed if both the given numbers are negative,otherwise False should be printed
+a=int(input())
+b=int(input())
+print(a < 0 and b < 0)
+
+#Sample Input:
+# -1
+# -2
+
+#Output:
+#True
+
+#?  True should be printed if both A and B are positive numbers or both A and B are less tahn 70,otherwise False should be printed
+
+a=int(input())
+b=int(input())
+positive=(a > 0)and(b > 0)
+less_than=(a < 70)and(b <70)
+print(positive or less_than)
+
+# Sample Input:
+# 200
+# 50
+
+# Output:
+# True
+
